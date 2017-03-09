@@ -5,7 +5,7 @@ FROM ambientum/php:7.0-caddy
 COPY . /var/www/app
 
 # make sure its owned by the php-user
-RUN sudo chown -R php-user:php-user /var/www/app
+# RUN sudo chown -R php-user:php-user /var/www/app
 
 # install the dependencies (mainly composer deps)
 RUN cd /var/www/app && \
